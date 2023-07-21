@@ -15,8 +15,16 @@ body {
   margin-right: 24px;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .mb-24 {
   margin-bottom: 24px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
 }
 
 .mb-32 {
@@ -31,16 +39,42 @@ body {
   color: $white_100;
 }
 
+.text-black {
+  color: $black_100;
+}
+
 .fz-24 {
   font-size: 24px;
+}
+
+.bg-white {
+  background: $white_100;
+}
+
+.bg-black {
+  background: $black_100;
 }
 
 .section-title {
   font-size: 64px;
 }
 
+.link {
+  display: inline-flex;
+  border-radius: 32px;
+  padding: 12px 24px;
+  .link-text {
+    margin-right: 4px;
+  }
+  &:hover {
+    transform: scale(1.01);
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
 .banner-section {
-  background: $black_100;
   padding: 72px 0;
   .container {
     display: flex;
@@ -61,16 +95,6 @@ body {
   }
   .title-group {
     text-align: right;
-  }
-  .contact-link {
-    display: inline-flex;
-    color: $black_100;
-    background: $white_100;
-    border-radius: 32px;
-    padding: 12px 24px;
-    .contact-link-text {
-      margin-right: 4px;
-    }
   }
 }
 
@@ -115,6 +139,7 @@ body {
     .about-item {
       width: 306px;
       border: 1px solid $gray_100;
+      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
       padding: 16px;
     }
     .about-item-title {
@@ -139,9 +164,58 @@ body {
   .icons-list {
     display: flex;
     align-items: center;
+    .icons-item {
+      &:hover {
+        transform: scale(1.01);
+      }
+      &:active {
+        transform: scale(0.99);
+      }
+    }
   }
   .arrow-icon {
     font-size: 100px;
     margin-right: auto;
+  }
+}
+
+.projects-section {
+  padding: 160px 0;
+  .section-title {
+    text-align: center;
+  }
+  .projects-container {
+    display: flex;
+  }
+  .projects-left-img {
+    width: 416px;
+  }
+  .projects-right-side-header {
+    display: flex;
+    img {
+      width: 196px;
+      height: 196px;
+    }
+    .projects-right-side-header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      p {
+        flex-grow: 1;
+        color: $black_200;
+      }
+    }
+  }
+  .projects-right-side-footer {
+    display: flex;
+  }
+  .projects-ride-side-footer-img-1, .projects-ride-side-footer-img-2 {
+    height: 306px;
+  }
+  .projects-ride-side-footer-img-1 {
+    width: 306px;
+  }
+  .projects-ride-side-footer-img-2 {
+    width: 526px;
   }
 }

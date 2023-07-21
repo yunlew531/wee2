@@ -9,15 +9,15 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <div class="banner-section">
+    <div class="banner-section bg-black">
       <div class="container">
         <img class="banner-img mr-24" src="../assets/images/people.png" alt="william">
         <div class="content">
           <h2>Hi<br>I’m a front-end<br>developer</h2>
           <div class="title-group">
             <h1>William</h1>
-            <a class="contact-link" href="#contact-section">
-              <span class="slink-text">CONTACT ME</span>
+            <a class="link bg-white text-black" href="#contact">
+              <span class="link-text">CONTACT ME</span>
               <span class="material-icons-outlined">north_east</span>
             </a>
           </div>
@@ -75,15 +75,40 @@
       </div>
     </div>
 
-    <div class="contact-section">
+    <div id="contact" class="contact-section">
       <div class="container">
         <h3 class="section-title text-white mr-16">CONTACT ME</h3>
         <span class="material-icons-outlined text-white arrow-icon">arrow_right_alt</span>
         <ul class="icons-list">
-          <li><a href="#"><img src="../assets/images/discord.png" alt="discord"></a></li>
-          <li><a href="#"><img src="../assets/images/instagram.png" alt="instagram"></a></li>
-          <li><a href="#"><img src="../assets/images/message.png" alt="message"></a></li>
+          <li class="icons-item"><a href="#"><img src="../assets/images/discord.png" alt="discord"></a></li>
+          <li class="icons-item"><a href="#"><img src="../assets/images/instagram.png" alt="instagram"></a></li>
+          <li class="icons-item"><a href="#"><img src="../assets/images/message.png" alt="message"></a></li>
         </ul>
+      </div>
+    </div>
+
+    <div class="projects-section">
+      <div class="container">
+        <h3 class="section-title mb-16">My Projects</h3>
+        <div class="projects-container">
+          <img class="projects-left-img mr-24" src="../assets/images/Rectangle 10.png" alt="computer">
+          <div class="projects-right-side">
+            <div class="projects-right-side-header mb-28">
+              <img class="mr-24" src="../assets/images/Rectangle 15.png" alt="code">
+              <div class="projects-right-side-header-content">
+                <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
+                <a href="#" class="link bg-black text-white">
+                  <span class="link-text">SEE MORE</span>
+                  <span class="material-icons-outlined">north_east</span>
+                </a>
+              </div>
+            </div>
+            <div class="projects-right-side-footer">
+              <img class="projects-ride-side-footer-img-1 mr-24" src="../assets/images/Rectangle 14.png" alt="phone">
+              <img class="projects-ride-side-footer-img-2" src="../assets/images/Rectangle 29.png" alt="phone">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
