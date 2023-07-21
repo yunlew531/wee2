@@ -7,8 +7,36 @@ body {
   margin: 0 auto;
 }
 
+.mr-16 {
+  margin-right: 16px;
+}
+
 .mr-24 {
   margin-right: 24px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-36 {
+  margin-bottom: 36px;
+}
+
+.text-white {
+  color: $white_100;
+}
+
+.fz-24 {
+  font-size: 24px;
+}
+
+.section-title {
+  font-size: 64px;
 }
 
 .banner-section {
@@ -43,5 +71,77 @@ body {
     .contact-link-text {
       margin-right: 4px;
     }
+  }
+}
+
+.introduction-section {
+  padding: 160px 0;
+  background: url(../images/background-img.png) no-repeat center;
+  background-size: cover;
+  .container {
+    display: flex;
+  }
+  .content {
+    width: 526px;
+  }
+  .sparkle-group {
+    display: flex;
+    justify-content: space-between;
+    width: 128px;
+  }
+  .images-list {
+    display: flex;
+    li:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+
+.about-section {
+  padding: 160px 0;
+  color: $black_200;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-title {
+    color: $black_100;
+  }
+  .about-list {
+    width: 636px;
+    display: flex;
+    flex-wrap: wrap;
+    .about-item {
+      width: 306px;
+      border: 1px solid $gray_100;
+      padding: 16px;
+    }
+    .about-item-title {
+      font-size: 20px;
+    }
+  }
+  .about-paragraph {
+    font-size: 24px;
+  }
+  .content {
+    width: 526px;
+  }
+}
+
+.contact-section {
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+  padding: 96px 0;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .icons-list {
+    display: flex;
+    align-items: center;
+  }
+  .arrow-icon {
+    font-size: 100px;
+    margin-right: auto;
   }
 }
