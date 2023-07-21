@@ -1,4 +1,11 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+  background: $black_100;
+  padding-top: 40px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    color: $white_200;
+  }
 }
